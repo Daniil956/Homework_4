@@ -3,5 +3,22 @@
 // 2, 4 -> 16
 
 Console.Clear();
-Console.Write("Enter number");
+
+int enterAB(string str)
+{
+    Console.Write(str); 
+    int number = Convert.ToInt32(Console.ReadLine());
+    return number;
+}
+
+int A = enterAB("Write  a number that will be raiseb to a power:  ");
+int B = enterAB("Number power: ");
+int result = 1;
+for(int i = 1; i <= B; i++)
+{
+    result = A * result;
+}
+
+Console.WriteLine($"Result = " + result);
+
 
